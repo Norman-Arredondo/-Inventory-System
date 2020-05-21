@@ -2,17 +2,19 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <title>Iniciar Sesión</title>
-  <!--JQUERY-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Nuestro css-->
   <link rel="stylesheet" href="../../css/login.css">
   <!--<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">-->
+  <!-- Nuestro JS-->
   <script src="../../js/js_login/login.js"></script>
+
+  <title>Iniciar Sesión</title>
 </head>
 
 <body>
@@ -28,10 +30,10 @@
         </div>
         <form class="col-12" action="" method="post">
           <div class="form-group" id="user-group">
-            <input id="txtLog" type="text" class="form-control" placeholder="&#128273; Username" name="username" />
+            <input id="txtLog" type="text" class="form-control" placeholder="&#128273; Username" name="username" required/>
           </div>
           <div class="form-group" id="contrasena-group">
-            <input id="txtPass" type="password" class="form-control" placeholder="&#128272; Password" name="password" />
+            <input id="txtPass" type="password" class="form-control" placeholder="&#128272; Password" name="password" required/>
           </div>
           <button type="submit" onClick="btnEnviar_click()" class="btn btn-outline-primary">Ingresar</button>
         </form>
@@ -41,6 +43,16 @@
       </div>
     </div>
   </div>
+
+  <!--Starter template-->
+  <section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </section>
+
 </body>
 
 </html>

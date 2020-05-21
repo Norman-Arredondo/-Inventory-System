@@ -8,6 +8,11 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Los iconos tipo Solid de Fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
   <!-- Nuestro css-->
   <link rel="stylesheet" href="../../css/ventas.css">
   <link rel="stylesheet" href="./css/responsive.css">
@@ -37,14 +42,14 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Consultar Stock de productos</a>
             </li>
+            <!--Boton de Cerrar sesión-->
             <li>
               <div class="dropdown">
-                <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                <button type="submit" class="btn btn-dark dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-sign-in-alt"></i></button>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Cerrar sesión</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt"></i> Cerrar sesión</a>
                 </div>
               </div>
-
             </li>
           </ul>
         </div>
@@ -70,7 +75,7 @@
             <!--form-control, bootstrap-->
           </div>
           <button type="submit" class="btn btn-dark">Buscar</button>
-          <button type="button" class="btn btn-dark ml-2"onclick="location.href='registrar.html'">Agregar</button>
+          <button type="button" class="btn btn-dark ml-2" onclick="location.href='registrar.html'">Agregar</button>
         </div>
       </form>
 
@@ -80,24 +85,24 @@
   <!--Tabla-->
   <section>
     <div class="container main-container mt-5">
-    <table class="table">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">Producto</th>
-          <th scope="col">Categoria</th>
-          <th scope="col">Stock</th>
-          <th scope="col">Descripción</th>
-          <th scope="col">Precio</th>
-        </tr>
-      </thead>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
         <tr></tr>
-          <td class="table-light">...</td>
-          <td class="table-light">...</td>
-          <td class="table-light">...</td>
-          <td class="table-light">...</td>
-          <td class="table-light">...</td>
+        <td class="table-light">...</td>
+        <td class="table-light">...</td>
+        <td class="table-light">...</td>
+        <td class="table-light">...</td>
+        <td class="table-light">...</td>
         </tr>
-        </div>
+    </div>
   </section>
 
   <!--Starter template- ***Mantener hasta abajo***-->
